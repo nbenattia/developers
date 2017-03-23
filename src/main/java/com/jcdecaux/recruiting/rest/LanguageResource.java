@@ -16,6 +16,9 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
+/**
+ * Created by nbenattia on 17/03/2017.
+ */
 @RestController
 @RequestMapping("/languages")
 public class LanguageResource {

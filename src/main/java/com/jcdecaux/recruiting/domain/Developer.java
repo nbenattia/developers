@@ -17,7 +17,7 @@ public class Developer implements Serializable {
 
     private String lastName;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     List<Language> languages;
 
     public long getId() {
