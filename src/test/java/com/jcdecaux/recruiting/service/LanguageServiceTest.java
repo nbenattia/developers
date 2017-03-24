@@ -41,7 +41,7 @@ public class LanguageServiceTest {
         // Act
         languageService.create(language);
         //Assert
-        assertThat(language.getName() == "Java");
+        assertThat(language.getName()).isEqualTo("Java");
 
 
     }

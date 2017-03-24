@@ -50,7 +50,7 @@ public class DeveloperServiceTest{
         // Act
         Long id = developerService.create(developer);
         //Assert
-        assertThat(id == 1);
+        assertThat(id).isEqualTo(1);
     }
 
 
@@ -64,9 +64,8 @@ public class DeveloperServiceTest{
         // Act
         developerService.update(1L,developer);
         //Assert
-        assertThat(developer.getId() == 1L);
-        assertThat(developer.getFirstName() == "first name updated");
-        assertThat(developer.getLastName() == "last name updated");
+        assertThat(developer.getFirstName()).isEqualTo("first name updated");
+        assertThat(developer.getLastName()).isEqualTo("last name updated");
     }
 
 
